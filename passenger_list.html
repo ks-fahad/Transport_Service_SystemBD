@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/desh.css">
+    <link rel="stylesheet" href="CSS/passenger_list.css">
+    <link rel="stylesheet" href="CSS/admin_colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/fit.css">
+    <title>TransGBD</title>
+</head>
+
+<body style="font-family:Verdana">
+    <div style="padding:1px;text-align:center;">
+        <h2>Transportation Bangladesh (Admin)</h2>
+    </div>
+    <div class="menu" id="menuid">
+        <a href="admin_desh.html">Profile</a>
+        <a href="new_bus.html">New Bus</a>
+        <a class="active">Passengers</a>
+        <a href="new_schedule.html">Schedule</a>
+        <a href="http://">Chat</a>
+        <a style="float: right;background-color: grey;" href="logout.html">Log Out</a>
+        <a href="javascript:void(0);" class="icon" onclick="showMenubar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script src="JS/index.js"></script>
+    <div class="mainpart">
+        <form class="search_bus">
+            <select class="select_opt" id="search_date">
+                <option value="0">Date</option>
+                <option value="1">Bus ID</option>
+                <option value="2">Date</option>
+                <option value="3"></option>
+            </select>
+            <select class="select_opt" id="search_time">
+                <option value="0">Time</option>
+                <option value="1">Bus ID</option>
+                <option value="2">Date</option>
+                <option value="3"></option>
+            </select>
+            <select class="select_opt" id="search_id">
+                <option value="0">Bus ID</option>
+                <option value="1">Bus ID</option>
+                <option value="2">Date</option>
+                <option value="3"></option>
+            </select>
+            <input type="text" class="search_field" name="" placeholder="Search Ticket id">
+        </form>
+        <table class="bus_list">
+            <tr class="value_name">
+                <th>S</th>
+                <th>Bus ID</th>
+                <th>Ticket ID</td>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>BT</th>
+                <th>S No.</th>
+                <th>Price</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>From</th>
+                <th>Stoppage</th>
+            </tr>
+            <tr class="list_value">
+                <td>1</td>
+                <td>890890</td>
+                <td>4567576878</td>
+                <td>Md.Fahad Hossain</td>
+                <td>454647890</td>
+                <td>4</td>
+                <td>A2,B3,C3,D5</td>
+                <td>1235</td>
+                <td>12-02-2022</td>
+                <td>10:30 AM</td>
+                <td>Cumilla,South</td>
+                <td>Cumilla,Chouddagram</td>
+            </tr>
+            <tr class="list_value_2">
+                <td>2</td>
+                <td>890892</td>
+                <td>4567576874</td>
+                <td>Md.Fahad Hossain</td>
+                <td>454647890</td>
+                <td>4</td>
+                <td>A2,B3,C3,D5</td>
+                <td>1235</td>
+                <td>12-02-2022</td>
+                <td>10:30 AM</td>
+                <td>Cumilla,South</td>
+                <td>Cumilla,Chouddagram</td>
+            </tr>
+            <tr class="list_value">
+                <td>3</td>
+                <td>890890</td>
+                <td>4567576878</td>
+                <td>Md.Fahad Hossain</td>
+                <td>454647890</td>
+                <td>4</td>
+                <td>A2,B3,C3,D5</td>
+                <td>1235</td>
+                <td>12-02-2022</td>
+                <td>10:30 AM</td>
+                <td>Cumilla,South</td>
+                <td>Cumilla,Chouddagram</td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer">© copyright 201 CSE batch of Green University of Bangladesh.</div>
+</body>
+
+</html>

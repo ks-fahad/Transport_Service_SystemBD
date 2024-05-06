@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/desh.css">
+    <link rel="stylesheet" href="CSS/admin_colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/fit.css">
+    <title>TransGBD</title>
+</head>
+
+<body style="font-family:Verdana">
+    <div style="padding:1px;text-align:center;">
+        <h2>Transportation Bangladesh (Admin)</h2>
+    </div>
+    <div class="menu" id="menuid">
+        <a class="active">Profile</a>
+        <a href="new_bus.html">New Bus</a>
+        <a href="passenger_list.html">Passengers</a>
+        <a href="new_schedule.html">Schedule</a>
+        <a href="http://">Chat</a>
+        <a style="float: right;background-color: gray ;" href="logout.html">Log Out</a>
+        <a href="javascript:void(0);" class="icon" onclick="showMenubar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script src="JS/index.js"></script>
+    <div class="bodypart">
+        <div class="options">
+            <h3>Operator details</h3>
+            <hr>
+            <img src="images/img 1.png" alt="" srcset="">
+            <table>
+                <tr>
+                    <th>Operator name</th>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Operator id</th>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Destinations</th>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Mobile</th>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Stoppages</th>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Type</th>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Price</th>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Total Bus</th>
+                    <td>:</td>
+                    <td>3456</td>
+                </tr>
+                <tr>
+                    <th>About Service</th>
+                    <td>:</td>
+                    <td>3456</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><a href="operator_modify.html">Modify information</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="mainpart">
+            <form class="search_bus">
+                <select class="select_opt">
+                    <option value="0">All</option>
+                    <option value="1">Bus ID</option>
+                    <option value="2">Type</option>
+                </select>
+                <input type="text" class="search_field" name="" placeholder="Seearch here">
+            </form>
+            <table class="bus_list">
+                <tr class="value_name">
+                    <th>Sr.</th>
+                    <th>Bus ID</th>
+                    <th>Driver Mobile</td>
+                    <th>Bus Type</th>
+                    <th>View</th>
+                </tr>
+                <!--start temp data-->
+                <tr class="list_value">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+
+                <tr class="list_value_2">
+                    <td>2</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+                <tr class="list_value">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+                <tr class="list_value_2">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+                <tr class="list_value">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+                <tr class="list_value_2">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+                <tr class="list_value">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+                <tr class="list_value_2">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+                <tr class="list_value">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+                <tr class="list_value">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+
+                <tr class="list_value_2">
+                    <td>2</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+                <tr class="list_value">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+                <tr class="list_value_2">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+                <tr class="list_value">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+                <tr class="list_value_2">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+                <tr class="list_value">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>4567576878</td>
+                    <td>AC</td>
+                    <td><button>Details</button></td>
+                </tr>
+                <!--end temp data-->
+            </table>
+            <div class="bus_info">
+                <h3>Bus Information</h3>
+                <hr>
+                <table class="bus_list">
+                    <tr>
+                        <th>Bus Id</th>
+                        <td>:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Bus Number</th>
+                        <td>:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Driver Mobile</th>
+                        <td>:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Driver Address</th>
+                        <td>:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Type</th>
+                        <td>:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Ticket Price</th>
+                        <td>:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Next Schedule</th>
+                        <td>:</td>
+                        <td>4566666666667</td>
+                    </tr>
+                    <tr style="text-align: right;">
+                        <td colspan="3"><button class="show_cancel">Delete</button>
+                            <button class="show_cancel">Close</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">© copyright 201 CSE batch of Green University of Bangladesh.</div>
+</body>
+
+</html>

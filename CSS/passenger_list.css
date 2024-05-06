@@ -1,0 +1,17 @@
+#search_time,#search_id{
+    border-radius: 0;
+    border-style:solid none solid none;
+}
+#search_id{
+    width: fit-content;
+    border-left-style: solid;
+}
+.list_value{
+    background-color:palegreen;
+}
+.list_value button,.list_value_2 button{
+    background-color:white;
+}
+.bus_list tr{
+    text-align: center;
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/desh.css">
+    <link rel="stylesheet" href="CSS/new_bus.css">
+    <link rel="stylesheet" href="CSS/admin_colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/fit.css">
+    <title>TransGBD</title>
+</head>
+
+<body style="font-family:Verdana">
+    <div style="padding:1px;text-align:center;">
+        <h2>Transportation Bangladesh</h2>
+        <hr>
+    </div>
+    <div class="bodypart">
+        <div class="mainpart" style="width: 100%;margin-top: 20px;">
+            <table style="width: auto;">
+                <form action="save_info_SignUp.php" method="post">
+                    <tr>
+                        <td colspan="3" align="center">
+                            <h3>Enter your Operator details to create account</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">
+                            <hr>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="3" id="note">Try to use unique name of your operator or <a href="login.html">log in</a></td>
+                    </tr>
+                    <tr>
+                        <th>Operator Name</th>
+                        <td>:</td>
+                        <td><input type="text" name="O_name" id=""></td>
+                    </tr>
+                    <tr>
+                        <th>Mobile Number</th>
+                        <td>:</td>
+                        <td><input type="number" name="mobile" id=""></td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>:</td>
+                        <td><input type="email" name="email" id=""></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">
+                            <hr>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Destinations</th>
+                        <td>:</td>
+                        <td><select name="district1">
+                            <option value="Bagerhat">Bagerhat</option>
+                            <option value="Bandarban">Bandarban</option>
+                            <option value="Barguna">Barguna</option>
+                            <option value="Barisal">Barisal</option>
+                            <option value="Bhola">Bhola</option>
+                            <option value="Bogra">Bogra</option>
+                            <option value="Brahmanbaria">Brahmanbaria</option>
+                            <option value="Chandpur">Chandpur</option>
+                            <option value="Chittagong">Chittagong</option>
+                            <option value="Chuadanga">Chuadanga</option>
+                            <option value="Comilla">Comilla</option>
+                            <option value="Cox'sBazar">Cox'sBazar</option>
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Dinajpur">Dinajpur</option>
+                            <option value="Faridpur">Faridpur</option>
+                            <option value="Feni">Feni</option>
+                            <option value="Gaibandha">Gaibandha</option>
+                            <option value="Gazipur">Gazipur</option>
+                            <option value="Gopalganj">Gopalganj</option>
+                            <option value="Habiganj">Habiganj</option>
+                            <option value="Jaipurhat">Jaipurhat</option>
+                            <option value="Jamalpur">Jamalpur</option>
+                            <option value="Jessore">Jessore</option>
+                            <option value="Jhalokati">Jhalokati</option>
+                            <option value="Jhenaidah">Jhenaidah</option>
+                            <option value="Khagrachari">Khagrachari</option>
+                            <option value="Khulna">Khulna</option>
+                            <option value="Kishoreganj">Kishoreganj</option>
+                            <option value="Kurigram">Kurigram</option>
+                            <option value="Kushtia">Kushtia</option>
+                            <option value="Lakshmipur">Lakshmipur</option>
+                            <option value="Lalmonirhat">Lalmonirhat</option>
+                            <option value="Madaripur">Madaripur</option>
+                            <option value="Magura">Magura</option>
+                            <option value="Manikganj">Manikganj</option>
+                            <option value="Maulvibazar">Maulvibazar</option>
+                            <option value="Meherpur">Meherpur</option>
+                            <option value="Munshiganj">Munshiganj</option>
+                            <option value="Mymensingh">Mymensingh</option>
+                            <option value="Naogaon">Naogaon</option>
+                            <option value="Narail">Narail</option>
+                            <option value="Narayanganj">Narayanganj</option>
+                            <option value="Narsingdi">Narsingdi</option>
+                            <option value="Natore">Natore</option>
+                            <option value="Nawabganj">Nawabganj</option>
+                            <option value="Netrokona">Netrokona</option>
+                            <option value="Nilphamari">Nilphamari</option>
+                            <option value="Noakhali">Noakhali</option>
+                            <option value="Pabna">Pabna</option>
+                            <option value="Panchagarh">Panchagarh</option>
+                            <option value="Patuakhali">Patuakhali</option>
+                            <option value="Pirojpur">Pirojpur</option>
+                            <option value="Rajbari">Rajbari</option>
+                            <option value="Rajshahi">Rajshahi</option>
+                            <option value="Rangamati">Rangamati</option>
+                            <option value="Rangpur">Rangpur</option>
+                            <option value="Satkhira">Satkhira</option>
+                            <option value="Shariatpur">Shariatpur</option>
+                            <option value="Sherpur">Sherpur</option>
+                            <option value="Sirajganj">Sirajganj</option>
+                            <option value="Sunamganj">Sunamganj</option>
+                            <option value="Sylhet">Sylhet</option>
+                            <option value="Tangail">Tangail</option>
+                            <option value="Thakurgaon">Thakurgaon</option>
+                    </select> </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>:</td>
+                        <td><select name="district2">
+                            <option value="Bagerhat">Bagerhat</option>
+                            <option value="Bandarban">Bandarban</option>
+                            <option value="Barguna">Barguna</option>
+                            <option value="Barisal">Barisal</option>
+                            <option value="Bhola">Bhola</option>
+                            <option value="Bogra">Bogra</option>
+                            <option value="Brahmanbaria">Brahmanbaria</option>
+                            <option value="Chandpur">Chandpur</option>
+                            <option value="Chittagong">Chittagong</option>
+                            <option value="Chuadanga">Chuadanga</option>
+                            <option value="Comilla">Comilla</option>
+                            <option value="Cox'sBazar">Cox'sBazar</option>
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Dinajpur">Dinajpur</option>
+                            <option value="Faridpur">Faridpur</option>
+                            <option value="Feni">Feni</option>
+                            <option value="Gaibandha">Gaibandha</option>
+                            <option value="Gazipur">Gazipur</option>
+                            <option value="Gopalganj">Gopalganj</option>
+                            <option value="Habiganj">Habiganj</option>
+                            <option value="Jaipurhat">Jaipurhat</option>
+                            <option value="Jamalpur">Jamalpur</option>
+                            <option value="Jessore">Jessore</option>
+                            <option value="Jhalokati">Jhalokati</option>
+                            <option value="Jhenaidah">Jhenaidah</option>
+                            <option value="Khagrachari">Khagrachari</option>
+                            <option value="Khulna">Khulna</option>
+                            <option value="Kishoreganj">Kishoreganj</option>
+                            <option value="Kurigram">Kurigram</option>
+                            <option value="Kushtia">Kushtia</option>
+                            <option value="Lakshmipur">Lakshmipur</option>
+                            <option value="Lalmonirhat">Lalmonirhat</option>
+                            <option value="Madaripur">Madaripur</option>
+                            <option value="Magura">Magura</option>
+                            <option value="Manikganj">Manikganj</option>
+                            <option value="Maulvibazar">Maulvibazar</option>
+                            <option value="Meherpur">Meherpur</option>
+                            <option value="Munshiganj">Munshiganj</option>
+                            <option value="Mymensingh">Mymensingh</option>
+                            <option value="Naogaon">Naogaon</option>
+                            <option value="Narail">Narail</option>
+                            <option value="Narayanganj">Narayanganj</option>
+                            <option value="Narsingdi">Narsingdi</option>
+                            <option value="Natore">Natore</option>
+                            <option value="Nawabganj">Nawabganj</option>
+                            <option value="Netrokona">Netrokona</option>
+                            <option value="Nilphamari">Nilphamari</option>
+                            <option value="Noakhali">Noakhali</option>
+                            <option value="Pabna">Pabna</option>
+                            <option value="Panchagarh">Panchagarh</option>
+                            <option value="Patuakhali">Patuakhali</option>
+                            <option value="Pirojpur">Pirojpur</option>
+                            <option value="Rajbari">Rajbari</option>
+                            <option value="Rajshahi">Rajshahi</option>
+                            <option value="Rangamati">Rangamati</option>
+                            <option value="Rangpur">Rangpur</option>
+                            <option value="Satkhira">Satkhira</option>
+                            <option value="Shariatpur">Shariatpur</option>
+                            <option value="Sherpur">Sherpur</option>
+                            <option value="Sirajganj">Sirajganj</option>
+                            <option value="Sunamganj">Sunamganj</option>
+                            <option value="Sylhet">Sylhet</option>
+                            <option value="Tangail">Tangail</option>
+                            <option value="Thakurgaon">Thakurgaon</option>
+                    </select></td>
+                    </tr>
+                    <tr>
+                        <th>Counters</th>
+                        <td>:</td>
+                        <td><textarea name="counters" id="" cols="25"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">
+                            <hr>
+                        </th>
+                    </tr>
+                    <tr><th colspan="3">Ticket Price</th></tr>
+                    <tr>
+                        <td>AC</td>
+                        <td>:</td>
+                        <td><input type="number" name="ac_price" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Non-AC</td>
+                        <td>:</td>
+                        <td><input type="number" name="non_price" id=""></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">
+                            <hr>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>About your service</th>
+                        <td>:</td>
+                        <td><textarea name="about" id="" cols="25"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">
+                            <hr>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Enter Password</th>
+                        <td>:</td>
+                        <td><input type="password" name="pas" id=""></td>
+                    </tr>
+                    <tr>
+                        <th>Confirm Password</th>
+                        <td>:</td>
+                        <td><input type="password" name="cpas" id=""></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center"><input type="submit" value="SignUp"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
+    <div class="footer">© copyright 201 CSE batch of Green University of Bangladesh.</div>
+</body>
+
+</html>

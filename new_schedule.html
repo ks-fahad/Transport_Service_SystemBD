@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/desh.css">
+    <link rel="stylesheet" href="CSS/passenger_list.css">
+    <link rel="stylesheet" href="CSS/schedule.css">
+    <link rel="stylesheet" href="CSS/admin_colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/fit.css">
+    <title>TransGBD</title>
+</head>
+
+<body style="font-family:Verdana">
+    <div style="padding:1px;text-align:center;">
+        <h2>Transportation Bangladesh (Admin)</h2>
+    </div>
+    <div class="menu" id="menuid">
+        <a href="admin_desh.html">Profile</a>
+        <a href="new_bus.html">New Bus</a>
+        <a href="passenger_list.html">Passengers</a>
+        <a class="active">Schedule</a>
+        <a href="http://">Chat</a>
+        <a style="float: right;background-color: grey;" href="logout.html">Log Out</a>
+        <a href="javascript:void(0);" class="icon" onclick="showMenubar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script src="JS/index.js"></script>
+    <div class="bodypart">
+        <div class="options">
+            <h3>Operator details</h3>
+            <hr>
+            <img src="images/img 1.png" alt="" srcset="">
+            <table>
+                <tr>
+                    <th>Operator name</th>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Operator id</th>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Destinations</th>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Mobile</th>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Stoppages</th>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Type</th>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Price</th>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Total Bus</th>
+                    <td>:</td>
+                    <td>3456</td>
+                </tr>
+            </table>
+        </div>
+        <div class="mainpart">
+            <form class="search_bus">
+                <select class="select_opt" id="search_date">
+                    <option value="0">Date</option>
+                    <option value="1">Bus ID</option>
+                    <option value="2">Date</option>
+                    <option value="3"></option>
+                </select>
+                <select class="select_opt" id="search_time">
+                    <option value="0">Time</option>
+                    <option value="1">Bus ID</option>
+                    <option value="2">Date</option>
+                    <option value="3"></option>
+                </select>
+                <select class="select_opt" id="search_id">
+                    <option value="0">Bus ID</option>
+                    <option value="1">56666666666666</option>
+                    <option value="2">Date</option>
+                    <option value="3"></option>
+                </select>
+                <button class="search_field" onclick="show_hide_addSchedule()">Add New</button>
+            </form>
+            <table class="show_add_opt" >
+                <form action="" method="post">
+                    <tr>
+                        <td colspan="3" align="center">
+                            <h3>Enter the bus id for add schedule</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">
+                            <hr>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Bus id</th>
+                        <td>:</td>
+                        <td><select name="" id="">
+                                <option value="">768888868</option>
+                                <option value="">Non-AC</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th>Date</th>
+                        <td>:</td>
+                        <td><select name="" id="">
+                                <option value="">12-04-2022</option>
+                                <option value="">13-04-2022</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th>Time</th>
+                        <td>:</td>
+                        <td><select name="" id="">
+                                <option value="">6AM</option>
+                                <option value="">7AM</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th>Destination</th>
+                        <td>:</td>
+                        <td><select name="" id="">
+                                <option value="">Dhaka to Cumilla</option>
+                                <option value="">Cumilla to Dhaka</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center"><input type="submit" value="Confirm and Submit"></td>
+                    </tr>
+                </form>
+            </table>
+            <script src="JS/schedule.js"></script>
+            <table class="bus_list" id="tb2">
+                <tr class="value_name">
+                    <th>Sr.</th>
+                    <th>Bus ID</th>
+                    <th>Type</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Booked Ticket</th>
+                    <th>Total Price</th>
+                    <th>From</th>
+                    <th>Destination</th>
+                </tr>
+                <tr class="list_value_2">
+                    <td>1</td>
+                    <td>890890</td>
+                    <td>AC</td>
+                    <td>12-02-2022</td>
+                    <td>10:30 AM</td>
+                    <td>24</td>
+                    <td>24000</td>
+                    <td>Dhaka</td>
+                    <td>CHITTAGONG</td>
+                </tr>
+                <tr class="list_value">
+                    <td>2</td>
+                    <td>890856</td>
+                    <td>AC</td>
+                    <td>12-02-2022</td>
+                    <td>10:50 AM</td>
+                    <td>15</td>
+                    <td>15000</td>
+                    <td>CHITTAGONG</td>
+                    <td>Dhaka</td>
+                </tr>
+                <tr class="list_value_2">
+                    <td>3</td>
+                    <td>890878</td>
+                    <td>AC</td>
+                    <td>12-02-2022</td>
+                    <td>11:00 AM</td>
+                    <td>10</td>
+                    <td>5000</td>
+                    <td>Cumilla</td>
+                    <td>Dhaka</td>
+                </tr>
+                <tr class="list_value">
+                    <td>4</td>
+                    <td>890857</td>
+                    <td>AC</td>
+                    <td>12-02-2022</td>
+                    <td>22:30 AM</td>
+                    <td>7</td>
+                    <td>7000</td>
+                    <td>Dhaka</td>
+                    <td>CHITTAGONG</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">© copyright 201 CSE batch of Green University of Bangladesh.</div>
+</body>
+
+</html>

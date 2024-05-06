@@ -1,0 +1,34 @@
+.mainpart {
+    margin-top: 80px;
+}
+
+.mainpart table {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border-collapse: collapse;
+    background-color: azure;
+    box-shadow: 2px 4px 5px 2px;
+}
+.mainpart tr th{
+    text-align: left;
+}
+.mainpart tr td input,.mainpart tr td select{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    font-size: 15px;
+    margin: 3px;
+}
+.mainpart tr td input[type=submit]{
+    background-color:DodgerBlue ;
+    cursor: pointer;
+    font-size: large;
+}
+.mainpart tr td input[type=submit]:hover{
+    background-color:white;
+}
+#note{
+    color: red;
+}

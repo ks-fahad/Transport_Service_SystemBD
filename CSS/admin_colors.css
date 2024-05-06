@@ -1,0 +1,9 @@
+body{
+    background: linear-gradient(90deg, rgba(59,64,60,1) 0%, rgba(161,255,173,1) 100%);
+}
+.menu{
+    background-color: silver ;
+}
+.menu a{
+    color: black;
+}

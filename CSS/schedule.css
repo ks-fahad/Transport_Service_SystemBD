@@ -1,0 +1,12 @@
+.show_add_opt{
+    margin: auto;
+    display: none;
+    text-align: left;
+}
+#tb2 .list_value{
+    background-color:burlywood;
+}
+#tb2{
+    opacity: 1;
+    width: 100%;
+}

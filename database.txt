@@ -1,0 +1,47 @@
+CREATE DATABASE 
+
+CREATE TABLE bus_operator (
+    operator_id INT AUTO_INCREMENT,
+    operator_name VARCHAR(60) NOT NULL,
+    mobile INT NOT NULL,
+    email VARCHAR(35) NOT NULL,
+    destination_1 VARCHAR(20) NOT NULL,
+    destination_2 VARCHAR(20) NOT NULL,
+    counters VARCHAR(150) NOT NULL,
+    ticket_ac INT(4) NOT NULL,
+    ticket_non INT(4) NOT NULL,
+    PRIMARY KEY(operator_id)
+    );
+
+INSERT INTO bus_operator(
+    operator_id,
+    operator_name,
+    mobile,
+    email,
+    destination_1,
+    destination_2,
+    counters,
+    ticket_ac,
+    ticket_non
+)
+VALUES(
+    202302048,
+    'Fahad Travels',
+    01720231016,
+    'fahad2023@gmail.com',
+    'Cumilla',
+    'Cox\'sBazar',
+    'Cumilla south,Chouddagram,Feni',
+    1000,
+    1200
+)
+
+ALTER TABLE
+    bus_operator ADD COLUMN about VARCHAR(200) NOT NULL;
+
+UPDATE
+    bus_operator
+SET
+    about = 'This bus operator provide service between cumilla and Cox\'s Bazar and we have both AC and Non-AC buses to make your journey enjoyable'
+WHERE
+    operator_id = 202302048;
